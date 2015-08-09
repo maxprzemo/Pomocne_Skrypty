@@ -1,0 +1,23 @@
+#!/bin/bash
+
+#adb='adb shell'
+
+#$adb cp -r sys/bus/platform/drivers/ > ~/find/
+
+#$adb grep -lr 'OF_FULLNAME' sys/bus/platform/drivers > ~/grep.txt
+
+#$adb find -L sys/bus/platform/drivers -name 'uevent' -maxdepth 3 > ~/find.txt
+
+#adb pull sys/bus/platform/drivers/sdhci_msm/msm_sdcc.2/uevent ~/Kopie
+#$adb cat sys/bus/platform/devices/DIAG_CMD.0/driver/DIAG_CMD.0/driver/DIAG_CMD.0/driver/DIAG_CMD.0/driver/DIAG_CMD.0/driver/DIAG_CMD.0/driver/DIAG_CMD.0/driver/DIAG_CMD.0/driver/DIAG_CMD.0/driver/DIAG_CMD.0/driver/DIAG_CMD.0/driver/DIAG_CMD.0/driver/DIAG_CMD.0/driver/DIAG_CMD.0/driver/DIAG_CMD.0/driver/DIAG_CMD.0/driver/DIAG_CMD.0/driver/DIAG_CMD.0/driver/DIAG_CMD.0/subsystem/devices/fc342000.cti/subsystem/drivers/qcom,rpm-regulator-smd-resource/uevent
+
+#clear
+#!/bin/bash
+
+I=1				# inicjujemy zmienną mówiącą o numerze elementu
+
+for WERS in $(cat find.txt)
+do
+	Touch $WERS
+	I=`expr $I + 1`
+done

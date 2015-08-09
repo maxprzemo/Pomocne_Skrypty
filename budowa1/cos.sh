@@ -1,0 +1,4 @@
+_________________
+jedna 
+druga 
+trzecia
